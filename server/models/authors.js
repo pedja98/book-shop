@@ -4,14 +4,8 @@ const Schema = mongoose.Schema;
 
 const authorsSchema = new Schema({
     name: {
-        first_name: {
-            type: String,
-            required: true
-        },
-        last_name: {
-            type: String,
-            required: true
-        }
+        type: String,
+        required: true
     },
     desc: {
         type: String,

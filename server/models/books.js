@@ -23,9 +23,13 @@ const booksSchema = new Schema({
         type: Number,
         required: true
     },
-    discounts: [{
+    discount: {
         type: ObjectId,
         ref: 'Discounts'
+    },
+    genres: [{
+        type: ObjectId,
+        ref: 'Genres'
     }
     ],
 });

@@ -1,10 +1,8 @@
 const moderatorRoutes = require('express').Router();
 const moderatorCtrl = require('../controllers/moderator');
 
-moderatorRoutes.post("/test", (req, res) => {
-    res.json({
-        test: "MOD"
-    })
-})
+moderatorRoutes.post("/add-author", moderatorCtrl.addAuthor)
+
+moderatorRoutes.post("/add-gener", moderatorCtrl.addGener)
 
 module.exports = moderatorRoutes;
