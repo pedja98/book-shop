@@ -27,6 +27,10 @@ const booksSchema = new Schema({
         type: ObjectId,
         ref: 'Discounts'
     },
+    out_of_stock: {
+        type: Boolean,
+        required: true
+    },
     genres: [{
         type: ObjectId,
         ref: 'Genres'
